@@ -19,10 +19,12 @@ footer ul li {
     font-size:14px;
     line-height: 20px;
     color:#AAA;
+    margin-bottom: 6px;
 }
+
 footer hr{
     border-bottom:2px solid #686868;
-    margin-top:75px;
+    margin-top:69px;
     margin-bottom:33px;
 }
 footer p {
