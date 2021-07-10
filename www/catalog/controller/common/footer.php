@@ -56,9 +56,11 @@ class ControllerCommonFooter extends Controller {
 			$this->model_tool_online->addOnline($ip, $this->customer->getId(), $url, $referer);
 		}
 
-		$data['scripts'] = $this->document->getScripts('footer');
-		$data['styles'] = $this->document->getStyles('footer');
-		
+		// $data['scripts'] = $this->document->getScripts('footer');
+
+		// $this->document->addStyle('catalog\view\theme\hbarms\stylesheet\footer.css');
+		// $data['styles'] = $this->document->getStyles();
+
 		return $this->load->view('common/footer', $data);
 	}
 }
