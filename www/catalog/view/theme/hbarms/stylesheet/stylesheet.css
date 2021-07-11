@@ -401,7 +401,6 @@ div.required .control-label:before {
 header {
 	background-color: #000000;
 	height: 77px;
-	border-bottom: 1px solid #2F2F2F;
 }
 #header-navbar-menu {
 	background-color: #000000;
@@ -453,8 +452,11 @@ header {
 }
 #header-navbar-menu .navbar-toggle {
 	border: none;
-
 }
+#header-navbar-menu>.container-fluid {
+	border-bottom: 1px solid #2F2F2F;
+}
+
 #header-navbar-menu .navbar-toggle .icon-bar {
 	height: 5px;
 	width: 35px;
@@ -539,15 +541,6 @@ header {
 		border:none;
 	}
    }
-
-
-
-
-
-
-
-
-
 
 /* logo */
 #logo {
