@@ -42,27 +42,39 @@
   <div class="container">
     <div id="top-links" class="nav pull-right">
       <ul class="list-inline">
-        <li><a href="{{ contact }}"></a> <span class="hidden-xs hidden-sm hidden-md">{{ telephone }}</span></li>
-        <li><a href="#"></a> <span class="hidden-xs hidden-sm hidden-md">{{ email }}</span></li>
+        <li><a href="#"><span class="hidden-xs hidden-sm hidden-md">{{ email }}</span></a></li>
+        <li><a href="{{ contact }}"><span class="hidden-xs hidden-sm hidden-md telephone">{{ telephone }}</span></a></li>
       </ul>
     </div>
   </div>
 </nav>
-{{ menu }}
 <header>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-4">
-        <div id="logo">{% if logo %}<a href="{{ home }}"><img src="{{ logo }}" title="{{ name }}" alt="{{ name }}" class="img-responsive" /></a>{% else %}
-          <h1><a href="{{ home }}">{{ name }}</a></h1>
-          {% endif %}</div>
+  <nav class="navbar navbar-default" id="header-navbar-menu" role="navigation">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only"></span>
+              <span class="icon-bar icon-bar-1"></span>
+              <span class="icon-bar icon-bar-2"></span>
+              <span class="icon-bar icon-bar-3"></span>
+            </button>
+        <a class="navbar-brand" id="logo" href="{{ home }}">{{ name }}</a>
       </div>
-      <div class="col-sm-5">{{ search }}</div>
-      <div class="col-sm-2">{{ cart }}</div>
-      <div class="col-sm-1">
-        <li><a href="{{ shopping_cart }}" title="{{ text_shopping_cart }}"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">{{ text_shopping_cart }}</span></a></li>
-      </div>
-    </div>
-  </div>
+  
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="menu-button active"><a href="#">Firearms</a></li>
+          <li class="menu-button"><a href="#">Amunition</a></li>
+          <li class="menu-button"><a href="#">TTF Transfers</a></li>
+          <li class="menu-button"><a href="#">Blog</a></li>
+          <li class="menu-button"><a href="#">Contact</a></li>
+          <li class="right-botton-header"><a href="{{ shopping_cart }}" title="{{ text_shopping_cart }}"><img src="image/icons/basket.svg" alt=""></a></li>
+          <li class="right-botton-header"><a href="#"><img src="image/icons/magnifier.svg" alt=""></a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
 </header>
 
