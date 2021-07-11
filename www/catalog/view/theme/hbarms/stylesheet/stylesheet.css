@@ -402,6 +402,8 @@ div.required .control-label:before {
 header {
 	background-color: #000000;
 	height: 77px;
+	position: relative;
+	z-index: 999;
 }
 #header-navbar-menu {
 	background-color: #000000;
@@ -544,6 +546,12 @@ header {
    }
 
 /* logo */
+
+#header-navbar-menu .navbar-header {
+	padding-left: 10%;
+}
+
+
 #logo {
 	margin: 0;
 	color: #fff;
@@ -779,35 +787,37 @@ footer h5 {
 .breadcrumb {
 	margin: 0 0 20px 0;
 	padding: 8px 0;
-	border: 1px solid #ddd;
+	background-color: #f000;
 }
 .breadcrumb i {
 	font-size: 15px;
 }
 .breadcrumb > li {
-	text-shadow: 0 1px 0 #FFF;
-	padding: 0 20px;
 	position: relative;
 	white-space: nowrap;
+}
+.breadcrumb > li > a {
+	font-family: 'Gilroy', sans-serif;
+	font-size: 16px;
+	color: #000000;
+	line-height: 20px;
+	font-weight: 500;
+	padding-right: 5px;
+	text-transform: capitalize;
+}
+.breadcrumb > li:last-child > a {
+	color: #CCCCCC;
 }
 .breadcrumb > li + li:before {
 	content: '';
 	padding: 0;
 }
 .breadcrumb > li:after {
-	content: '';
-	display: block;
-	position: absolute;
-	top: -3px;
-	right: -5px;
-	width: 26px;
-	height: 26px;
-	border-right: 1px solid #DDD;
-	border-bottom: 1px solid #DDD;
-	-webkit-transform: rotate(-45deg);
-	-moz-transform: rotate(-45deg);
-	-o-transform: rotate(-45deg);
-	transform: rotate(-45deg);
+	content: '/';
+	font-family: 'Gilroy', sans-serif;
+}
+.breadcrumb > li:last-child::after {
+	content: none;
 }
 .pagination {
 	margin: 0;
