@@ -145,7 +145,7 @@ class ControllerProductCategory extends Controller {
 					'name' => $result['name'],
 					'href' => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '_' . $result['category_id'] . $url),
 					'short_description' => trim(html_entity_decode($result['short_description'], ENT_QUOTES, 'UTF-8')),
-					'image' => $result['image']
+					'image' => $result['image']?'image/'.$result['image']:''
 				);
 			}
 

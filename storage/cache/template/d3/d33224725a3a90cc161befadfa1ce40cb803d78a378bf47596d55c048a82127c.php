@@ -1,0 +1,132 @@
+<?php
+
+use Twig\Environment;
+use Twig\Error\LoaderError;
+use Twig\Error\RuntimeError;
+use Twig\Extension\SandboxExtension;
+use Twig\Markup;
+use Twig\Sandbox\SecurityError;
+use Twig\Sandbox\SecurityNotAllowedTagError;
+use Twig\Sandbox\SecurityNotAllowedFilterError;
+use Twig\Sandbox\SecurityNotAllowedFunctionError;
+use Twig\Source;
+use Twig\Template;
+
+/* hbarms/template/common/footer.twig */
+class __TwigTemplate_016cf23060dd7249f96f74a06c036191efc4f90e01bbe9de741c1f5132f3f719 extends \Twig\Template
+{
+    private $source;
+    private $macros = [];
+
+    public function __construct(Environment $env)
+    {
+        parent::__construct($env);
+
+        $this->source = $this->getSourceContext();
+
+        $this->parent = false;
+
+        $this->blocks = [
+        ];
+    }
+
+    protected function doDisplay(array $context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        // line 1
+        echo "<footer>
+  <div class=\"container\">
+    <div class=\"row\">
+      <div class=\"col-sm-offset-1 col-sm-2\">
+        <h5>Firearms</h5>
+        <ul class=\"list-unstyled\">
+          <li>Assembled</li>
+        </ul>
+      </div>
+      <div class=\"col-sm-2\">
+        <h5>Amunition</h5>
+        <ul class=\"list-unstyled\">
+          <li>Assembled Rounds</li>
+          <li>Components</li>
+        </ul>
+      </div>
+      <div class=\"col-sm-2\">
+        <h5>TTF transfers</h5>
+        <ul class=\"list-unstyled\">
+          <li>Assembled</li>
+          <li>Components</li>
+        </ul>
+      </div>
+      <div class=\"col-sm-2\">
+        <h5>Blog</h5>
+      </div>
+      <div class=\"col-sm-2\">
+        <h5>Contact</h5>
+      </div>
+    </div>
+    <hr>
+    <p>All rights reserved</p>
+  </div>
+</footer>
+
+";
+        // line 36
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable(($context["styles"] ?? null));
+        foreach ($context['_seq'] as $context["_key"] => $context["style"]) {
+            // line 37
+            echo "<link href=\"";
+            echo twig_get_attribute($this->env, $this->source, $context["style"], "href", [], "any", false, false, false, 37);
+            echo "\" type=\"text/css\" rel=\"";
+            echo twig_get_attribute($this->env, $this->source, $context["style"], "rel", [], "any", false, false, false, 37);
+            echo "\" media=\"";
+            echo twig_get_attribute($this->env, $this->source, $context["style"], "media", [], "any", false, false, false, 37);
+            echo "\" />
+";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['style'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 39
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable(($context["scripts"] ?? null));
+        foreach ($context['_seq'] as $context["_key"] => $context["script"]) {
+            // line 40
+            echo "<script src=\"";
+            echo $context["script"];
+            echo "\" type=\"text/javascript\"></script>
+";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['script'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 42
+        echo "<!--
+OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.
+Please donate via PayPal to donate@opencart.com
+//-->
+</body>
+
+</html>";
+    }
+
+    public function getTemplateName()
+    {
+        return "hbarms/template/common/footer.twig";
+    }
+
+    public function isTraitable()
+    {
+        return false;
+    }
+
+    public function getDebugInfo()
+    {
+        return array (  104 => 42,  95 => 40,  91 => 39,  78 => 37,  74 => 36,  37 => 1,);
+    }
+
+    public function getSourceContext()
+    {
+        return new Source("", "hbarms/template/common/footer.twig", "");
+    }
+}

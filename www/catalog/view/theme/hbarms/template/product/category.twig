@@ -38,7 +38,7 @@
                 {% for category in categories %}
                   <div class="grid-category-child">
                     <div class="children-img-block"><img src="{{ category.image }}" alt=""></div>
-                    <a class="name-category-child" href="#">{{ category.name }}</a>
+                    <a class="name-category-child" href="{{ category.href }}">{{ category.name }}</a>
                     <a class="detailed-link-grid-child-category" href="#">detailed</a>
 
                     <p class="filter-category"><a href="#">rifile</a> / <a href="#">pistol</a></p>
