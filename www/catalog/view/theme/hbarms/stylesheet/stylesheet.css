@@ -499,7 +499,7 @@ header {
 		display: none!important;
 	}
  }
- @media (max-width: 893px) {
+ @media (max-width: 990px) {
 	.navbar-header {
 		float: none;
 	}
@@ -786,7 +786,7 @@ footer h5 {
 /* breadcrumb */
 .breadcrumb {
 	margin: 0 0 20px 0;
-	padding: 8px 0;
+	padding: 0;
 	background-color: #f000;
 }
 .breadcrumb i {
@@ -795,6 +795,7 @@ footer h5 {
 .breadcrumb > li {
 	position: relative;
 	white-space: nowrap;
+	line-height: 20px;
 }
 .breadcrumb > li > a {
 	font-family: 'Gilroy', sans-serif;

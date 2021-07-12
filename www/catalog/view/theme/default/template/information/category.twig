@@ -1,10 +1,5 @@
 {{ header }}
 <div id="information-category" class="container">
-  <ul class="breadcrumb">
-    {% for breadcrumb in breadcrumbs %}
-    <li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
-    {% endfor %}
-  </ul>
   <div class="row">{{ column_left }}
     {% if column_left and column_right %}
     {% set class = 'col-sm-6' %}
@@ -14,7 +9,12 @@
     {% set class = 'col-sm-12' %}
     {% endif %}
     <div id="content" class="{{ class }}">{{ content_top }}
-      <h1>{{ heading_title }}</h1>
+      <h3 class="zagolovok-blogs">{{ heading_title }}</h3>
+      <ul class="breadcrumb">
+        {% for breadcrumb in breadcrumbs %}
+        <li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+        {% endfor %}
+      </ul>
       {% if thumb or description %}
       <div class="row"> {% if thumb %}
         <div class="col-sm-2"><img src="{{ thumb }}" alt="{{ heading_title }}" title="{{ heading_title }}" class="img-thumbnail" /></div>
@@ -99,12 +99,12 @@
       {% endif %}
       <div class="row">
         {% for information in informations %}
-        <div class="information-layout {{ view }} col-xs-12">
-          <div class="thumbnail media">
+        <div class="information-layout {{ view }} col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <div class="thumbnail media list-blogs">
             {% if information.thumb %}
-            <div class="image pull-left"><a href="{{ information.href }}"><img src="{{ information.thumb }}" alt="{{ information.title }}" title="{{ information.title }}" class="img-responsive" /></a></div>
+            <div class="image image-list-blog"><a href="{{ information.href }}"><img src="{{ information.thumb }}" alt="{{ information.title }}" title="{{ information.title }}" class="img-responsive" /></a></div>
             {% endif %}
-            <div class="caption media-body">
+            <div class="caption media-body about-list-blog">
               <h4><a href="{{ information.href }}">{{ information.title }}</a></h4>
               {% if show_author or show_date or show_review %}
               <ul class="list-inline text-muted small">
@@ -124,8 +124,8 @@
                 {% endif %}
               </ul>
               {% endif %}
-              <p>{{ information.description }}</p>
-              <a href="{{ information.href }}" type="button" class="btn btn-primary" title="{{ text_read }}">{{ text_read }}</a>
+              <p class="about-blog">{{ information.description }}</p>
+              <a href="{{ information.href }}" type="button" class="btn btn-primary button-list-blogs" title="{{ text_read }}">{{ text_read }}</a>
             </div>
           </div>
         </div>
@@ -133,7 +133,7 @@
       </div>
       <div class="row">
         <div class="col-sm-6 text-left">{{ pagination }}</div>
-        <div class="col-sm-6 text-right">{{ results }}</div>
+        <div class="col-sm-6 text-right"></div>
       </div>
       {% endif %}
       {% if not categories and not products and not informations and not category_information %}

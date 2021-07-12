@@ -33,6 +33,7 @@ class ControllerInformationInformation extends Controller {
 			$data['heading_title'] = $information_info['title'];
 
 			$data['description'] = html_entity_decode($information_info['description'], ENT_QUOTES, 'UTF-8');
+			$data['date_addedb'] = date("j F Y", strtotime($information_info['date_added']));
 
 			$data['continue'] = $this->url->link('common/home');
 
@@ -59,7 +60,7 @@ class ControllerInformationInformation extends Controller {
 			$data['continue'] = $this->url->link('common/home');
 
 			$this->response->addHeader($this->request->server['SERVER_PROTOCOL'] . ' 404 Not Found');
-
+			
 			$data['column_left'] = $this->load->controller('common/column_left');
 			$data['column_right'] = $this->load->controller('common/column_right');
 			$data['content_top'] = $this->load->controller('common/content_top');
