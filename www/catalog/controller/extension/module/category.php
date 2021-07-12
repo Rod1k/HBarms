@@ -30,6 +30,11 @@ class ControllerExtensionModuleCategory extends Controller {
 		$categories = $this->model_catalog_category->getCategories(0);
 
 		foreach ($categories as $category) {
+		
+			if ($category['information']) {
+				continue;
+			}
+
 			$children_data = array();
 
 			if ($category['category_id'] == $data['category_id']) {

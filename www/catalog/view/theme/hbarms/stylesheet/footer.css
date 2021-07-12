@@ -2,6 +2,7 @@ footer {
     padding-top: 111px;
     background: #484848;
     font-weight: 500;
+    margin-top:0px;
 }
 footer h5{
     font-family: "Gilroy", sans-serif;
@@ -47,15 +48,15 @@ footer a:hover, footer a:focus {
     footer ul{
         margin:0px;
         text-align: center;
-    } 
+    }
     footer ul li{
         font-size: 14px;
         margin-bottom: 5px;
-    } 
+    }
     footer h5{
         margin-bottom: 10px;
         margin-top:30px;
         text-align: center;
         font-size:17px;
     }
-} 
+}
