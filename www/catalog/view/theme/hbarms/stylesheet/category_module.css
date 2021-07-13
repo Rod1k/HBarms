@@ -1,25 +1,38 @@
-.category-hbarms h2{
-    font-size: 50px;
-    font-weight: bold;
-    line-height: 70px;
-    color:#353535;
-    margin-top: 93px;
-    margin-bottom: 0px;
-    text-transform: uppercase;
+.container-category {
+    margin-top: 65px;
+    margin-bottom: 139px;
 }
-.category-hbarms .breadcrumb{
-    padding: 0px;
-    margin-top:13px;
+
+.categories-grid>.nav-tabs {
+    border: none;
     margin-bottom: 0px;
-} 
-
-/* Styles Rodion */
-
+}
 .grid-category {
-    margin-top: 84px;
-    margin-bottom: 154px;
-
+    margin-top: 77px;
 }
+.categories-grid>.nav-tabs>li.nav-item>a {
+    font-size: 40px;
+    line-height: 70px;
+    color: #BFBFBF;
+    text-transform: uppercase;
+    padding: 0;
+    margin-right: 50px;
+    transition: 0.5s;
+    border: none;
+}
+.categories-grid>.nav-tabs>li.nav-item>a:hover, .categories-grid>.nav-tabs>li.nav-item>a:focus {
+    background-color: #f000;
+    transition: 0.5s;
+    color: #353535;
+    outline:none;
+}
+
+.categories-grid>.nav-tabs>li.active>a {
+    color: #353535;
+    border: none;
+}
+
+
 
 .grid-category-parents {
     display: grid;
@@ -32,6 +45,10 @@
     border-radius: 5px;
     border: 1px solid #D9D9D9;
 }
+
+
+
+
 
 
 .grid-category-child>.children-img-block {
@@ -94,6 +111,54 @@
     color: #4F4F4F;
     transition: 0.5s;
 }
+
+
+.categories-h>.row {
+    position: relative;
+}
+.categories-h>.row>.button-col {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.button-all-articles {
+    display: block;
+    width: 167px;
+    height: 52px;
+    float: right;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Gilroy', sans-serif;
+    text-align: center;
+    line-height: 52px;
+    border: 1px solid #000;
+    transition: 0.5s;
+}
+.button-all-articles:hover {
+    cursor: pointer;
+}
+.black-button {
+    background-color: #000;
+    border-color: #000;
+    color: #fff;
+}
+.black-button:hover {
+    background-color: #f000;
+    color: #000;
+    transition: 0.5s;
+}
+
+.zagolovok-categoris {
+    font-size: 50px;
+    line-height: 70px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #353535;
+    padding-top: 93px;
+    padding-bottom: 13px;
+}
+
 
 @media screen and (max-width: 893px) {
     .grid-category-parents {grid-template-columns: 1fr;}

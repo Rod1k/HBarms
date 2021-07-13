@@ -1,3 +1,4 @@
+{#
 <div class="list-group">
   {% for category in categories %}
   {% if category.category_id == category_id %} 
@@ -15,3 +16,51 @@
   {% endif %}
   {% endfor %}
 </div>
+#}
+{% if categories %}
+<div class="container-category">
+  <div class="categories-h">
+      <div class="categories-grid">
+        <ul class="nav nav-tabs">
+          {% for key, category in categories %}
+          <li class="nav-item {{(key==0)?'active':''}}">
+            <a class="nav-link" data-toggle="tab" href="#tab_category_{{key}}">{{category.name}}</a>
+          </li>
+          {% endfor %}
+          <!-- Вторая вкладка -->
+          <!-- <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#assembledrounds">ASSEMBLED ROUNDS</a>
+          </li> -->
+        </ul>
+      </div>
+  </div>
+
+  <div class="grid-category">
+    <div class="categories-grid">
+      <div class="tab-content"> 
+        {% for key, category in categories %}
+        <div class="tab-pane fade {{(key==0)?'active in':''}}" id="tab_category_{{key}}">
+          <div class="grid-category-parents">
+            {% if category.children %}
+            {% for child in category.children %}
+            <div class="grid-category-child">
+              <div class="children-img-block"><img src="{{child.image}}" alt="{{child.name}}"></div>
+              <a class="name-category-child" href="{{child.href}}">{{child.name}}</a>
+              <span class="detailed-link-grid-child-category">{{child.short_description}}</span>
+              <!-- <p class="filter-category"><a href="#">rifile</a> / <a href="#">pistol</a></p> -->
+            </div>
+            {% endfor %}
+            {% endif %}
+          </div>
+        </div>
+        {% endfor %}
+        <!-- <div class="tab-pane fade" id="tab_category_{{key}}">
+            ssd
+        </div> -->
+      </div>  
+    </div>
+  </div>
+</div>
+
+<link href="catalog\view\theme\hbarms\stylesheet\category_module.css" type="text/css" rel="stylesheet" media="screen" />
+{% endif %}

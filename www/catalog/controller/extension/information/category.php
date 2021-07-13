@@ -205,7 +205,8 @@ class ControllerExtensionInformationCategory extends Controller {
 
 				foreach ($results as $result) {
 					if ($result['image']) {
-						$image = $this->model_tool_image->resize($result['image'], $this->config->get('information_optimblog_image_information_width'), $this->config->get('information_optimblog_image_information_height'));
+						// $image = $this->model_tool_image->resize($result['image'], $this->config->get('information_optimblog_image_information_width'), $this->config->get('information_optimblog_image_information_height'));
+						$image = "image/".$result['image'];
 					} else {
 						$image = false;
 					}

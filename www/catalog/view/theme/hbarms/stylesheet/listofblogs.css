@@ -5,9 +5,16 @@ h3.zagolovok-blogs {
     font-weight: 700;
     color: #353535;
     font-family: 'Gilroy', sans-serif;
-    margin-top: 77px;
+    margin-top: 93px;
     margin-bottom: 13px;
     text-transform: uppercase;
+}
+
+#information-category{
+    margin-bottom: 112px;
+}
+#information-category .breadcrumb{
+    margin-bottom: 92px;
 }
 .list-blogs {
     padding: 0px;
