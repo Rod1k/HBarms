@@ -1,0 +1,66 @@
+.filter-hbarms {
+    margin-top:59px;
+    margin-bottom: 0;
+    border:none;
+    box-shadow: none;
+    font-family: 'Muller', sans-serif;
+}
+.filter-hbarms .list-group-item{
+    border-width: 1px;
+    border:1px solid #EDEDED !important;
+    border-top:none !important;
+    padding: 0;
+}
+.filter-hbarms .list-group-item:first-child{
+    background: #F8F8F8;
+    border:none !important;
+    border-top-left-radius:5px !important;
+    border-top-right-radius:0px !important;
+}
+.checbox-group-hbarms{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list-group-item .checkbox_hbarms label{
+    margin:0;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: medium;
+    padding:23px 34px;
+    color:#434343;
+    cursor:pointer;
+}
+.list-group-item .checkbox_hbarms .active-label-filter {
+    color:rgba(67,67,67,0.4);
+}
+
+.list-group-item:first-child .checkbox_hbarms label{
+    margin:0;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 20px;
+    font-weight: bold;
+    padding:18px 42px;
+    color:#737373;
+    border-right: 1px solid rgba(196,196, 196, 0.2);
+    cursor:pointer;
+}
+.list-group-item:first-child .checkbox_hbarms .active-label-filter {
+    color:white;
+    font-weight: 400;
+    background: #FF8A00;
+}
+.checkbox_hbarms:first-child .active-label-filter{
+    border-top-left-radius:5px;
+}
+@media screen and (max-width:767px){
+    .list-group-item .checkbox_hbarms label{
+        line-height: 20px;
+        padding:20px;
+    }
+    .list-group-item:first-child .checkbox_hbarms label{     
+        padding:18px 25px;   
+    }
+}
+

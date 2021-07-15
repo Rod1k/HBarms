@@ -99,3 +99,102 @@
     .grid-category-parents {grid-template-columns: 1fr;}
     
 }
+.btn-link:hover, .btn-link:focus{
+    outline:none !important;
+}
+#list-view{
+    padding-right:0px;
+}
+#list-view i{
+    -webkit-text-stroke: 2px white;
+}
+#grid-view i{
+    -webkit-text-stroke: 1px white;
+}
+.view-product-hbarms{
+    margin-top: 59px;
+}
+.view-product-hbarms .btn-link i{
+    font-size: 18px;
+    color:#c4c4c4;
+}
+
+.view-product-hbarms .btn-link.active i{
+    color:#FF8A00;
+}
+.view-product-hbarms hr{
+    color: #DADADA;
+    margin-top: 28px;
+    margin-bottom: 90px;
+}
+/* ÎÁÙÈÅ ÑÒÈËÈ ÄËß ÑÅÒÎÊ  */
+.product-hbarms .product-thumb {
+    border:none;
+}
+.product-hbarms .caption{
+    padding:0px;
+    min-height: 0px;
+}
+.product-hbarms .caption h4{
+    margin-top:25px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;  
+}
+.product-hbarms .caption h4 a{
+    color:#353535;
+}
+.product-hbarms .caption p{
+    margin-top:10px;
+}
+/* ÑÅÒÊÀ ÃÐÈÄ */
+.product-hbarms .product-grid .product-thumb {
+    margin-bottom: 188px;
+}
+/* ÏÎÑÒÐÎ×ÍÀß ÑÅÒÊÀ */
+.product-hbarms .product-list .product-thumb {
+    margin-bottom: 80px;
+}
+
+@media screen and (max-width: 767px) {
+    .product-hbarms .caption h4{
+        text-align: center;
+    }
+    .product-hbarms .caption p{
+        text-align: center;
+    }
+    .product-hbarms .product-thumb {
+        margin-bottom: 80px !important;
+    }
+}
+
+/* ÏÀÃÈÍÀÖÈß */
+.pagination > li:first-child > a, .pagination > li:first-child > span{
+    border-radius:0px;
+}
+.pagination > li:last-child > a, .pagination > li:last-child > span{
+    border-radius:0px;
+}
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover{
+    background-color: #353535;
+    border-color: #353535;
+}
+.pagination > li > a:focus, .pagination > li > a:hover, .pagination > li > span:focus, .pagination > li > span:hover{
+    color: #353535;
+
+}
+.pagination > li > a, .pagination > li > span{
+    color: #353535;
+    border: 1px solid #f8f8f8;
+}
+@media screen and (max-width: 767px) {
+    .pagination-hbarms{
+        text-align: center;
+    }
+    .result-hbarms{
+        text-align: center;
+        margin-top:30px;
+    }
+    
+}
