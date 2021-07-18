@@ -68,3 +68,18 @@
     border: none;
     margin-top:90px;
 }
+@media screen and (max-width:767px){
+    .infomation-head{
+        margin-bottom: 34px;
+    }
+    .wrapper-container-blog{
+        padding-top:40px;
+        padding-bottom: 15px;
+    }
+    .information-thumb{
+        margin-bottom: 44px;
+    }
+    .infomation-head a{
+        display: none;
+    }
+}

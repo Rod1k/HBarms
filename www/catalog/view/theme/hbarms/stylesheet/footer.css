@@ -43,20 +43,22 @@ footer a:hover, footer a:focus {
 }
 @media screen and (max-width:767px){
     footer {
-        padding-top: 50px;
+        padding-top: 34px;
+        padding-bottom: 44px;
     }
     footer ul{
-        margin:0px;
-        text-align: center;
-    }
-    footer ul li{
-        font-size: 14px;
-        margin-bottom: 5px;
+        display:none;
     }
     footer h5{
-        margin-bottom: 10px;
-        margin-top:30px;
-        text-align: center;
-        font-size:17px;
+        margin:0px;
+        font-size:20px;
+        line-height: 50px;
+        font-weight: 500;
+    }
+    footer hr {
+        display:none;
+    }
+    .all-right-footer{
+        display: none;
     }
 }

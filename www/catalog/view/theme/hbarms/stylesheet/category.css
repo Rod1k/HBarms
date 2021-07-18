@@ -158,6 +158,15 @@
 }
 
 @media screen and (max-width: 767px) {
+
+    .grid-category {
+        margin-top: 76px;
+        margin-bottom: 121px;
+    
+    }
+    .category-hbarms h2{
+        margin-top:47px;
+    }
     .product-hbarms .caption h4{
         text-align: center;
     }

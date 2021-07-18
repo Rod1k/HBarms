@@ -721,8 +721,12 @@ header {
 	#menu .dropdown:hover .dropdown-menu {
 		display: block;
 	}
+	
 }
 @media (max-width: 767px) {
+	#top{
+		display: none;
+	}
 	#menu {
 		border-radius: 4px;
 	}
@@ -997,6 +1001,7 @@ footer h5 {
 	float: left;
 	padding: 0 15px;
 }
+
 }
 .product-thumb h4 {
 	font-weight: bold;
@@ -1019,6 +1024,9 @@ footer h5 {
 	min-height: 0;
 	margin-left: 0;
 	padding: 0 10px;
+}
+#header-navbar-menu .navbar-header {
+	padding-left: 0px;
 }
 .product-grid .product-thumb .caption {
 	min-height: 0;

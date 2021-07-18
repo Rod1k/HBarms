@@ -37,9 +37,16 @@ $('#slideshow{{ module }}').swiper({
     autoplayDisableOnInteraction: true,
 	loop: true
 });
-$(window).resize(function(){
-  $(".slide-item-resize").css({"height" : $(".slideshow").width()*0.35});
-})
-var heightslide = $(".swiper-container").height();
-$(".slide-item-resize").css({"height" : $(".slideshow").width()*0.35});
+
+// const mediaQuery = window.matchMedia('(min-width: 768px)')
+// if (mediaQuery.matches) {
+//   $(".slide-item-resize").css({"height" : $(".slideshow").width()*0.35});
+//   $(window).resize(function(){
+//     $(".slide-item-resize").css({"height" : $(".slideshow").width()*0.35});
+//   })
+// } else {
+//   $(".slide-item-resize").css({"height" : $(".slideshow").width()*0.9});
+// }
+
+
 //--></script>

@@ -12,6 +12,7 @@
 }
 .categories-grid>.nav-tabs>li.nav-item>a {
     font-size: 40px;
+    font-weight: bold;
     line-height: 70px;
     color: #BFBFBF;
     text-transform: uppercase;
@@ -164,3 +165,18 @@
     .grid-category-parents {grid-template-columns: 1fr;}
     
 }
+@media screen and (max-width: 767px) {
+    .categories-grid>.nav-tabs>li.nav-item>a {
+        font-size: 30px;
+        margin-right: 30px;
+        
+    }
+    .container-category {
+        margin-top: 21px;
+        margin-bottom: 33px;
+    }
+
+    .grid-category {
+        margin-top: 43px;
+    }
+} 
