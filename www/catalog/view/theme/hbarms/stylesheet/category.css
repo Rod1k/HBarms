@@ -133,7 +133,7 @@
 }
 .product-hbarms .caption{
     padding:0px;
-    min-height: 0px;
+    min-height: 0px !important;
 }
 .product-hbarms .caption h4{
     margin-top:25px;
