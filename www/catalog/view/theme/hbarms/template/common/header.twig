@@ -23,6 +23,7 @@
 <link href="catalog/view/javascript/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 <link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700" rel="stylesheet" type="text/css" />
 <link href="catalog/view/theme/hbarms/stylesheet/stylesheet.css" rel="stylesheet">
+<link rel="stylesheet" href="catalog/view/theme/hbarms/stylesheet/listofblogs.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -54,17 +55,17 @@
 <header>
   <nav class="navbar navbar-default" id="header-navbar-menu" role="navigation">
     <div class="container-fluid">
-
-          <!  -- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                  <span class="sr-only"></span>
-                  <span class="icon-bar icon-bar-1"></span>
-                  <span class="icon-bar icon-bar-2"></span>
-                  <span class="icon-bar icon-bar-3"></span>
-                </button>
-            <a class="navbar-brand" id="logo" href="{{ home }}">{{ name }}</a>
-          </div>
+      <div class="row">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only"></span>
+                <span class="icon-bar icon-bar-1"></span>
+                <span class="icon-bar icon-bar-2"></span>
+                <span class="icon-bar icon-bar-3"></span>
+              </button>
+          <a class="navbar-brand" id="logo" href="{{ home }}">{{ name }}</a>
+        </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -73,12 +74,12 @@
               <li class="menu-button"><a href="/index.php?route=product/category&path=65">Amunition</a></li>
               <li class="menu-button"><a href="javascript:void(0)">TTF Transfers</a></li>
               <li class="menu-button"><a href="/index.php?route=extension/information/category&path=72">Blog</a></li>
-              <li class="menu-button"><a href="javascript:void(0)">Contact</a></li>
+              <li class="menu-button"><a href="/index.php?route=information/contact">Contact</a></li>
               <li class="right-botton-header"><a href="{{ shopping_cart }}" title="{{ text_shopping_cart }}"><img src="image/icons/basket.svg" alt=""></a></li>
               <li class="right-botton-header"><a href="javascript:void(0)"><img src="image/icons/magnifier.svg" alt=""></a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
-
+      </div>
     </div><!-- /.container-fluid -->
   </nav>
 </header>

@@ -1,0 +1,84 @@
+h3.zagolovok-contacts {
+    font-size: 50px;
+    line-height: 70px;
+    font-weight: 700;
+    font-style: normal;
+    font-family: 'Gilroy', sans-serif;
+    margin-top: 93px;
+    margin-bottom: 13px;
+    text-transform: uppercase;
+}
+.block_contacts {
+    padding: 36px 48px;
+    border: 1px solid #E5E5E5;
+    max-width: 470px;
+    display: block;
+    margin: auto;
+}
+.text-contact-label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: left;
+    margin-bottom: 33px;
+    border: none;
+}
+.contacts-block {
+    padding: 0;
+    margin: 0;
+}
+.block-address, .block-address {
+    padding: 17px 0 0 0;
+    margin: 0;
+}
+.block-address>p, .block-address>p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 500;
+    color: #000;
+}
+.adress {
+    width: 271px;
+}
+.telephone-с {
+    margin-bottom: 26px;
+}
+.contact-form {
+    background-color: #F5F5F5;
+    border-radius: 0px;
+    border: none;
+    height: 61px;
+    margin-bottom: 9px;
+    box-shadow: none;
+    font-size: 16px!important;
+    line-height: 26px!important;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400!important;
+}
+.button-contact>.btn {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14px;
+    text-align: center;
+    background-color: #FF8A00;
+    padding: 16px 44px;
+    background-image: none;
+    border-radius: 0px;
+    border: 1px solid #FF8A00;
+    width: 154px;
+    text-shadow: none;
+    text-transform:uppercase; 
+}
+.button-contact>.btn:hover {
+
+}
+
+.contacts-container {
+    margin-bottom: 197px;
+}

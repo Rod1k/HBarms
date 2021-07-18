@@ -414,9 +414,7 @@ header {
 	margin: 0;
 	height: 77px;
 }
-#header-navbar-menu .container-fluid {
-	padding: 0;
-}
+
 #header-navbar-menu .menu-button a{
 	font-size: 15px;
 	line-height: 47px;
@@ -491,7 +489,7 @@ header {
 		overflow: visible !important;
 	}
 }
-@media screen and (max-width: 1094px) {
+@media screen and (max-width: 1200px) {
 	#header-navbar-menu .menu-button a {
 		margin-right: 10px;
 	}
@@ -1113,12 +1111,6 @@ h2.price {
 	list-style: none;
 	padding: 0;
 	margin: 0;
-}
-.thumbnails > li {
-	margin-left: 20px;
-}
-.thumbnails {
-	margin-left: -20px;
 }
 .thumbnails > img {
 	width: 100%;
