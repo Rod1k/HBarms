@@ -44,7 +44,7 @@ class ControllerExtensionModuleLatestInformation extends Controller {
 					'description'    => !empty($result['short_description']) ? trim(html_entity_decode($result['short_description'], ENT_QUOTES, 'UTF-8')) : utf8_substr(trim(strip_tags(html_entity_decode($result['description'], ENT_QUOTES, 'UTF-8'))), 0, $this->config->get('information_optimblog_information_description_length')) . '..',
 					'user_id'        => $result['user_id'],
 					'author'         => $result['author'],
-					'date_added'     => date($this->language->get('date_format_short'), strtotime($result['date_added'])),
+					'date_added'     => date("j F Y", strtotime($result['date_added'])),
 					'reviews'        => sprintf($this->language->get('text_review'), $result['reviews']),
 					'rating'         => $result['rating'],
 					'href'           => $this->url->link('information/information', '&information_id=' . $result['information_id'])
@@ -61,6 +61,12 @@ class ControllerExtensionModuleLatestInformation extends Controller {
 			$data['review'] = $setting['review'];
 
 			$data['module'] = $module++;
+
+			if (isset($this->request->get['information_id'])) {
+				$data['main_page'] = false;
+			}else{
+				$data['main_page'] = true;
+			}
 
 			return $this->load->view('extension/module/latest_information', $data);
 		}

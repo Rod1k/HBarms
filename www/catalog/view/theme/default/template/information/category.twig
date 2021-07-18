@@ -131,10 +131,7 @@
         </div>
         {% endfor %}
       </div>
-      <div class="row">
-        <div class="col-sm-6 text-left">{{ pagination }}</div>
-        <div class="col-sm-6 text-right"></div>
-      </div>
+      
       {% endif %}
       {% if not categories and not products and not informations and not category_information %}
       <p>{{ text_empty }}</p>
@@ -144,6 +141,12 @@
       {% endif %}
       {{ content_bottom }}</div>
     {{ column_right }}</div>
+</div>
+<div class="container">
+<div class="row">
+  <div class="col-sm-6 text-left pagination-hbarms">{{ pagination }}</div>
+  <div class="col-sm-6 text-right result-hbarms">{{ results }}</div>
+</div><br>
 </div>
 <link rel="stylesheet" href="catalog/view/theme/hbarms/stylesheet/listofblogs.css">
 {{ footer }}

@@ -87,3 +87,33 @@ h3.zagolovok-blogs {
     transition: 0.5s;
     text-shadow: none;
 }
+
+/* ПАГИНАЦИЯ */
+.pagination > li:first-child > a, .pagination > li:first-child > span{
+    border-radius:0px;
+}
+.pagination > li:last-child > a, .pagination > li:last-child > span{
+    border-radius:0px;
+}
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover{
+    background-color: #353535;
+    border-color: #353535;
+}
+.pagination > li > a:focus, .pagination > li > a:hover, .pagination > li > span:focus, .pagination > li > span:hover{
+    color: #353535;
+
+}
+.pagination > li > a, .pagination > li > span{
+    color: #353535;
+    border: 1px solid #f8f8f8;
+}
+@media screen and (max-width: 767px) {
+    .pagination-hbarms{
+        text-align: center;
+    }
+    .result-hbarms{
+        text-align: center;
+        margin-top:30px;
+    }
+    
+}

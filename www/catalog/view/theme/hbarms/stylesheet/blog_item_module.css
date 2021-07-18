@@ -1,0 +1,38 @@
+.other-articles-container{
+    width: 80%;
+}
+h4 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 100%;
+    color: #323232;
+    text-transform: uppercase;
+    margin:0px;
+    margin-bottom: 48px;
+    letter-spacing: 0.2em;
+}
+.date-added-other-articles{
+    font-size: 12px;
+    line-height: 30px;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    color: rgba(0,0,0,0.8);
+}
+.title-other-articles a{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    color:black;
+    text-transform: uppercase;
+}
+.description-other-articles{
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+    color:rgba(0,0,0,0.4);
+    font-family: "Roboto", sans-serif;
+}
+.hr-other-articles{
+    margin-top:24px;
+    margin-bottom:44px;
+}
