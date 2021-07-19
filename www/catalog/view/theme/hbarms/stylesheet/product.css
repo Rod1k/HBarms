@@ -1,0 +1,159 @@
+.zagolovok-product {
+    font-size: 50px;
+    line-height: 70px;
+    font-family: 'Gilroy', sans-serif;
+    color: #353535;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 93px;
+    margin-bottom: 13px;
+}
+
+#button-cart {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    background-image: none;
+    text-shadow: none;
+    box-shadow: none;
+    background-color: #FF8A00;
+    border: 1px solid #FF8A00;
+    color: #fff;
+    padding: 15px 72px;
+    width: 243px;
+    height: 54px;
+    border-radius: 0px;
+    margin-bottom: 61px;
+    transition: 0.5s;
+}
+#button-cart:hover {
+    background-color: #fff;
+    color: #FF8A00;
+    transition: 0.5s;
+}
+.thumbnail {
+    margin-bottom: 23px;
+}
+.thumbnails>li>.thumbnail {
+    border: none;
+    border-radius: 0px;
+}
+.thumbnails>li:first-child>.thumbnail {
+    border-bottom: 1px solid #C4C4C4;
+}
+.thumbnails .image-additional {
+    margin-left: 0px;
+    width: 25%;
+    max-width: 25%;
+}
+#product {
+
+}
+
+.zagolovok-information {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    color: #353535;
+    margin-bottom: 39px;
+}
+.options-product {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.form-control {
+    border: 1px solid #D8D8D8;
+    font-size: 14px;
+    line-height: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-family: 'Gilroy', sans-serif;
+    color: #000000;
+    border-radius: 0px;
+    height: 59px;
+    box-shadow: none;
+    padding-left: 10px;
+}
+.control-label {
+    position: relative;
+    font-size: 12px;
+    line-height: 12px;
+    font-style: normal;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    color: #999999;
+    padding: 0px 13px;
+    background-color: #fff;
+    top: 12px;
+    left: 13px;
+}
+.description-product {
+    margin-bottom: 65px;
+}
+.price-product {
+    font-size: 30px;
+    line-height: 30px;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    color: #2E2E2E;
+    margin-bottom: 123px;
+}
+.price-product>span {
+    font-weight: 500;
+}
+.zagolovok-related {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px;
+    text-align: left;
+    margin-bottom: 71px;
+    margin-top: 99px;
+}
+.product-thumb {
+    border: none;
+    margin-bottom: 0px;
+}
+.product-thumb .caption {
+    padding: 25px 0px 0px 0px;
+}
+.product-thumb .caption>h4>a {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+    color: #353535;
+}
+.related-description-product {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: #8C8C8C;
+    margin-bottom: 21px;
+}   
+.price {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+    color: #000000;
+}
+.product-recomend {
+    padding-bottom: 99px;
+}
